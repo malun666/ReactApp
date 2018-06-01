@@ -1,0 +1,9 @@
+.about-container a {
+  float: left;
+  height: 40px;
+  width: 100px;
+  background-color: azure; }
+
+.about-container h3 {
+  height: 100px;
+  background-color: #9999ff; }

@@ -1,0 +1,12 @@
+.about-container {
+  a {
+    float: left;
+    height: 40px;
+    width: 100px;
+    background-color: azure;
+  }
+  h3 {
+    height: 100px;
+    background-color: lighten($color: blue, $amount: 30);
+  }
+}
