@@ -1,13 +1,25 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import './Stu.css';
 import {asynceLoadStu, asyncDelStu} from '../actions/stuAction';
 
+import {Popconfirm, message} from 'antd';
+import './Stu.css';
+import 'antd/dist/antd.css';
 class Stu extends Component {
+  constructor(props) {
+    super(props);
+    this.delCancle = this
+      .delCancle
+      .bind(this);
+  }
   componentDidMount() {
     this
       .props
       .LoadStu();
+  }
+
+  delCancle(e) {
+    message.info('取消删除！');
   }
 
   render() {
@@ -38,12 +50,17 @@ class Stu extends Component {
                     <td>{item.stu_phone}</td>
                     <td>{item.stu_address}</td>
                     <td>
-                      <button
-                        className="button is-small"
-                        onClick={this
+                      <Popconfirm
+                        title="您确认要删除当前学生信息吗？"
+                        onConfirm={this
                         .props
                         .delStuById
-                        .bind(this, item.id)}>删除</button>
+                        .bind(this, item.id)}
+                        onCancel={this.delCancle}
+                        okText="确认"
+                        cancelText="取消">
+                        <button className="button is-small">删除</button>
+                      </Popconfirm>
                     </td>
                   </tr>
                 )
@@ -54,6 +71,8 @@ class Stu extends Component {
     )
   }
 }
+
+message.config({top: 530, duration: 2, maxCount: 3});
 
 // 把state映射到app显示组件的内容上, 映射的属性名字就是传入ui组件的  props的属性名。
 function mapStateToProps(state) {
@@ -68,9 +87,11 @@ function mapDispatchToProps(dispatch) {
       dispatch(asynceLoadStu())
     },
     delStuById: (id) => {
-      console.log(id);
-      dispatch(asyncDelStu(id));
+      dispatch(asyncDelStu(id)).then((() => {
+        message.success('删除成功！');
+      }));
     }
   }
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Stu);

@@ -16,14 +16,14 @@ export function delStu(stuId) {
 //redux-thunk  异步action
 export function asyncDelStu(stuId) {
   return (dispatch, getState) => {
-    axios
+    return axios
       .post('http://yapi.demo.qunar.com/mock/7378/api/delstu')
       .then(res => {
         dispatch(delStu(stuId));
       })
       .catch((res) => {
         console.log(res);
-      })
+      });
   }
 }
 
