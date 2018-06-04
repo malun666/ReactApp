@@ -5,6 +5,8 @@ export const stuActionTypes = {
   EDIT: 'EDIT_STU',
   LOAD: 'LOAD_STU'
 };
+
+// action creater
 export function addStu(stu) {
   return {type: stuActionTypes.ADD, data: stu}
 }
@@ -19,6 +21,7 @@ export function asyncDelStu(stuId) {
     return axios
       .post('http://yapi.demo.qunar.com/mock/7378/api/delstu')
       .then(res => {
+        // getState
         dispatch(delStu(stuId));
       })
       .catch((res) => {
