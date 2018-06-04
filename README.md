@@ -2,15 +2,7 @@
 
 主要是综合应用了：`React`、`react-router`、`axios`、`redux`、`redux-thunk`、`scss`等，可以作为你学习和使用`React`的基础模板。
 
-## Table of Contents
-
-* [目录结构](#folder-structure)
-* [NPM Scripts](#available-scripts)
-  * [npm start](#npm-start)
-  * [npm run build](#npm-run-build)
-* [开发](#如何使用)
-
-## 如何使用
+## 快速使用
 
 * 启动开发
 
