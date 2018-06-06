@@ -1,5 +1,7 @@
 此项目为：基于[Create React App](https://github.com/facebookincubator/create-react-app)构建的 React 的项目模板。
 
+免费在线前端全套视频地址：[https://qtxh.ke.qq.com/](https://qtxh.ke.qq.com/)
+
 **前端全栈实习**： [aicoder.com](aicoder.com)  不骗人，高质量的实习机构。
 
 **不8000就业，不用还实习费 **
