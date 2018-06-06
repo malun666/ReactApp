@@ -4,15 +4,20 @@
 
 ## 快速使用
 
-* 启动开发
+- 开发
 
 ```sh
+# 安装依赖
+$ npm instal
+# 或者yarn
+$ yarn
+
 $ npm start
 # 或者，使用yarn
 $ yarn start
 ```
 
-* 打包部署
+- 打包部署
 
 ```sh
 $ npm run build
