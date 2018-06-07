@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import List from '../components/List'
 
 class Main extends Component {
@@ -6,7 +6,7 @@ class Main extends Component {
     return (
       <div>
         <h3>main</h3>
-        <List kname="sdf"></List>      
+        <List kname="sdf"></List>
       </div>
     );
   }

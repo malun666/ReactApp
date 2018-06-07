@@ -4,13 +4,16 @@ import Stu from '../view/Stu';
 
 export const routes = [
   {
-    path: '/main',
-    component: Main
+    path: '/home/main',
+    component: Main,
+    exact: true
   }, {
-    path: '/about',
-    component: About
+    path: '/home/about',
+    component: About,
+    exact: false
   }, {
-    path: '/stu',
-    component: Stu
+    path: '/home/stu',
+    component: Stu,
+    exact: false
   }
 ]
