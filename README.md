@@ -1,8 +1,8 @@
 此项目为：基于[Create React App](https://github.com/facebookincubator/create-react-app)构建的 React 的项目模板。
 
-本项目不兼容 IE8，仅作为学习参考，需要兼容请自行添加相关垫片。
-
 免费在线前端全套视频地址：[https://qtxh.ke.qq.com/](https://qtxh.ke.qq.com/)
+
+仅用于学习，不能应用于IE8,如果需要加入IE8的支持，请自行降级版本和添加相关垫片。
 
 **前端全栈实习**： [aicoder.com](aicoder.com) 不骗人，高质量的实习机构。
 
