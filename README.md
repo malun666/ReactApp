@@ -1,10 +1,12 @@
 此项目为：基于[Create React App](https://github.com/facebookincubator/create-react-app)构建的 React 的项目模板。
 
+本项目不兼容 IE8，仅作为学习参考，需要兼容请自行添加相关垫片。
+
 免费在线前端全套视频地址：[https://qtxh.ke.qq.com/](https://qtxh.ke.qq.com/)
 
-**前端全栈实习**： [aicoder.com](aicoder.com)  不骗人，高质量的实习机构。
+**前端全栈实习**： [aicoder.com](aicoder.com) 不骗人，高质量的实习机构。
 
-**不8000就业，不用还实习费 **
+**不 8000 就业，不用还实习费 **
 
 主要是综合应用了：`React`、`react-router`、`axios`、`redux`、`redux-thunk`、`scss`等，可以作为你学习和使用`React`的基础模板。
 
