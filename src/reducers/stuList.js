@@ -12,6 +12,8 @@ export default function stuList(state = [], action) {
         data
       ];
     case stuActionTypes.DEL: // 删除
+      console.log('state:app ===>', state);
+
       let delTemp = state.slice();
       delTemp.splice(state.findIndex(stu => stu.id === data), 1);
       return delTemp;

@@ -1,6 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
 import Home from './view/Home';
 import Login from './view/Login';
 
@@ -10,9 +15,9 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Redirect exact from="/" to="/Home"/>
-            <Route path='/Home' component={Home}/>
-            <Route path='/Login' component={Login}/>
+            <Redirect exact from="/" to="/Home" />
+            <Route path="/Home" component={Home} />
+            <Route path="/Login" component={Login} />
           </Switch>
         </Router>
       </div>
